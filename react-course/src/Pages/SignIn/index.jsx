@@ -1,14 +1,11 @@
-function SignIn() {
-  
+import Layout from "../../Components/Layout";
 
-    return (
-      <>
-        <div className="bg-red-100">
-          Sign In
-        </div>      
-      </>
-    )
-  }
-  
-  export default SignIn
-  
+function SignIn() {
+  return (
+    <>
+      <Layout>Sign In</Layout>
+    </>
+  );
+}
+
+export default SignIn;

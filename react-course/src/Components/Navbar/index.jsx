@@ -3,7 +3,7 @@ const Navbar = () => {
   const activeStyle = "underline underline-offset-4";
 
   return (
-    <nav className="flex justify-betwwen items-center fixed z-10 w-full py-5 px-8 text-sm font-light">
+    <nav className="flex justify-between items-center fixed z-10 top-0 w-full py-5 px-8 text-sm font-light">
       <ul className="flex items-center gap-3">
         <li className="font-semibold">
           <NavLink to="/">Shopee</NavLink>
@@ -92,7 +92,7 @@ const Navbar = () => {
             Sign In
           </NavLink>
         </li>
-      </ul>    
+      </ul>
     </nav>
   );
 };
