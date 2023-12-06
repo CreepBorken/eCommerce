@@ -6,8 +6,6 @@ import './styles.css'
 
 const ProductDetail = () => {
     const context = useContext(ShoppingCartContext)
-    console.log("🚀 ~ file: index.jsx:9 ~ ProductDetail ~ ShoppingCartContext:", context.ProductToShow)
-
     return (
         <aside className={`${context.IsProductDetailOpen ? 'flex' : 'hidden'} product-detail  flex-col fixed right-0 border border-black rounded bg-white`}>
             <div className='flex justify-between items-center p-6'>
@@ -15,7 +13,7 @@ const ProductDetail = () => {
                 <div onClick={() => context.closeProductDetail()}><XMarkIcon className="h-6 w-6 text-black-500 cursor-pointer"  /></div>
             </div>
             <figure className='px-6'>
-                <img className='w-full h-full rounded-lg' src={context.ProductToShow.images[0]} alt={context.ProductToShow.title}/> 
+                <img className='w-full h-full rounded-lg' src={context.ProductToShow.images} alt={context.ProductToShow.title}/>
             </figure>
             <p className='flex flex-col p-6'>
                 <span className='font-medium text-2xl'>${context.ProductToShow.price}</span>
